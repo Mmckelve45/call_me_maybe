@@ -23,7 +23,7 @@ class _BusinessCardState extends State<BusinessCard> {
             Spacer(
               flex: 2,
             ),
-            Expanded(flex: 12, child: Image.asset('assets/linkedInPhoto.jpg')),
+            Expanded(flex: 12, child: Image.asset('assets/images/linkedInPhoto.jpg')),
             Expanded(
               flex: 3,
               child: 
@@ -39,11 +39,11 @@ class _BusinessCardState extends State<BusinessCard> {
               )
             ),
             Expanded(
-              flex: 2,
+              flex: 3,
               child: 
               Align(
                 alignment: Alignment.center,
-                child: Text('Software Dude',
+                child: Text('Software/Accounting Dude',
                 style:TextStyle(
                   fontSize: 18,
                   fontFamily: 'Rubik',
@@ -53,15 +53,15 @@ class _BusinessCardState extends State<BusinessCard> {
               )
             ),
             Expanded(
-              flex: 2,
+              flex: 3,
               child: 
               Align(
                 alignment: Alignment.center,
                 child: 
                   GestureDetector(
-                    onTap:() => launch('sms:6029998888'),
+                    onTap:() => launch('sms:6024308899'),
                     child: 
-                      Text('(602) 999-8888',
+                      Text('(602) 430-8899',
                         style: TextStyle(
                           fontSize: 18,
                           fontFamily: 'Rubik'
@@ -70,7 +70,7 @@ class _BusinessCardState extends State<BusinessCard> {
                   )
               )
             ),
-            Expanded(flex: 2, child: githubRow())
+            Expanded(flex: 6, child: githubRow())
           ],
         ),
     );
@@ -87,10 +87,10 @@ Widget githubRow() {
         child: 
         Align(alignment: Alignment.center,
           child: GestureDetector(
-            onTap: () => launch('https://github.com'),
+            onTap: () => launch('https://github.com/Mmckelve45?tab=repositories'),
             child: Text(
-              'github.com',
-              style: TextStyle(fontSize: 16, fontFamily: 'Raleway', color: Color.fromARGB(255, 255, 0, 0)),
+              'https://github.com',
+              style: TextStyle(fontSize: 16, fontFamily: 'Raleway', color: Color.fromARGB(255, 42, 7, 238)),
             )
           )
         )
@@ -100,7 +100,7 @@ Widget githubRow() {
         child: Align(
           alignment: Alignment.center,
           child: Text('mmckelve45@gmail.com',
-          style: TextStyle(fontSize: 16, fontFamily:'Raleway', color: Color.fromARGB(255, 255, 0, 0)))
+          style: TextStyle(fontSize: 16, fontFamily:'Raleway', color: Color.fromARGB(255, 42, 7, 238)))
         )
       )
     ]

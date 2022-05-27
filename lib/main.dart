@@ -11,6 +11,7 @@ void main() {
     DeviceOrientation.landscapeLeft,
     DeviceOrientation.portraitUp
   ]);
+  
 
   runApp(MyApp());
 }

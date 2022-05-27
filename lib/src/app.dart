@@ -27,13 +27,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var tabs = [Icon(Icons.face), Icon(Icons.article_outlined), Icon(Icons.help_center_outlined)];
+  var tabs = [
+    Icon(Icons.face),
+    Icon(Icons.article_outlined),
+    Icon(Icons.help_center_outlined)
+  ];
 
-  final screens = [
-    BusinessCard(),
-    Resume(),
-    Predictor()
-  ]; 
+  final screens = [BusinessCard(), Resume(), Predictor()];
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         initialIndex: 0,
         length: screens.length,
         child: Scaffold(
-            backgroundColor: Colors.yellow,
+            backgroundColor: Color.fromARGB(255, 186, 230, 231),
             appBar: AppBar(
               title:
                   Align(alignment: Alignment.center, child: Text(widget.title)),
